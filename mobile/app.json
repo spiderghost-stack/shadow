@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Shadow",
+    "slug": "shadow",
+    "scheme": "shadow",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "backgroundColor": "#FFFFFF"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.shadow.app"
+    },
+    "android": {
+      "package": "com.shadow.app"
+    },
+    "plugins": ["expo-secure-store"]
+  }
+}
