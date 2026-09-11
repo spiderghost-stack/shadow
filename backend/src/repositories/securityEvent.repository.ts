@@ -6,7 +6,7 @@ import { prisma } from "../config/database";
 export const securityEventRepository = {
   log(params: { userId?: string; type: string; metadata?: Record<string, unknown> }) {
     return prisma.securityEvent.create({
-      data: { userId: params.userId, type: params.type, metadata: params.metadata },
+      data: { userId: params.userId, type: params.type, metadata: params.metadata ? (params.metadata as any) : undefined },
     });
   },
 
